@@ -12,6 +12,11 @@ Return the information on ice on/out for the LTER lakes.
 \note{
 Northern and southern ice on/off data are not described in exactly the same way, so some liberty was taken here. 
 Southern data are reported only as "ice_on" and "ice_off". To match the northern data, I have renamed them 
-"datelastopen" and "datefirstopen" respectively. I feel this is the closest analog.
+"datelastopen" and "datefirstopen" respectively. I feel this is the closest analog. 
+
+Further, there is a "year" column. There is no clear consensus on what season or year should correspond with 
+in ice dates. For example, sometimes ice-on can be in December, and sometimes in January. What "year" is that 
+ice date associated with? Here, I have normalized everything so that "year" corresponds with the *summer* after
+an ice-out date and before the ice-on date. So ice-on in January 1984 corresponds to the "year" 1983.
 }
 
